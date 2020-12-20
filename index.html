@@ -1,20 +1,47 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-<link rel="icon" href="https://img.icons8.com/nolan/32/000000/ioxhost.png">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  <link rel="icon" href="https://img.icons8.com/nolan/32/000000/ioxhost.png">
 
 
-<title> SeriuxMod - Ein neues Abenteuer beginnt! </title>
-<meta name="theme-color" content="#b5e853" />
-<meta name="description" content="I bims eins charon" />
+  <title> SeriuxMod - Ein neues Abenteuer beginnt! </title>
+  <meta name="theme-color" content="#b5e853" />
+  <meta name="description" content="Dies hier ist eine Webseite die ich aus Spaß erstellt habe. LG ~charon" />
+
+  <meta property="og:description" content="Dies hier ist eine Webseite die ich aus Spaß erstellt habe. LG ~charon" />
+  <link rel="canonical" href="https://charonxyz.github.io/" />
+  <meta property="og:url" content="https://charonxyz.github.io/" />
+  <meta property="og:site_name" content="charonxyz" />
+  <script type="application/ld+json">
+{"@type":"WebSite","headline":"SeriuxMod - Ein neues Abenteuer beginnt!","url":"https://charonxyz.github.io/","description":"Dies hier ist eine Webseite die ich aus Spaß erstellt habe. LG ~charon","name":"charonxyz","@context":"https://schema.org"}</script>
 
 </head>
+
 <body>
-<h1>Hello World</h1>
-<p>I bims eins charon</p>
+  <header>
+    <div class="container">
+
+      <h1> Testing HTML </h1>
+      <h3>Hello World</h1>
+      <p>I bims eins charon</p>
+
+    </div>
+  </header>
+
+  {% if site.google_analytics copied from lypt0x %}
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+      </script>
+    {% endif %}
 </body>
+
 </html>
