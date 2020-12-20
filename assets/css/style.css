@@ -54,8 +54,7 @@ p {
 #head {
 	background-image: url("https://wallpaperaccess.com/full/2029165.jpg");
 	margin: 0;
-	padding: 222px 0px 222px 0px;
-	text-align: center;
+  padding: 0;
 	color: white;
 }
 
