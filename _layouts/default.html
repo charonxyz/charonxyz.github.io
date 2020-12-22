@@ -63,9 +63,9 @@
 
   <div class="container">
       <section id="main_content">
-        <h2 id="header-2"> My Name is charon i guess </h2>
+        <h2 class="ml12"> My Name is charon i guess </h2>
         <blockquote>
-          <p>I'm a Stack-🍪</p>
+          <p> YEAH </p>
         </blockquote>
       </section>
 
@@ -83,5 +83,25 @@
     </div>
     <p> <a href="https://www.github.com/lantisog">@lantisog</a> is a fish 🐟 and <a href="https://www.github.com/lypt0x">@lypt0x</a> is a bird 🐦</p>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script>
+  anime.timeline({loop: true})
+  .add({
+    targets: '.ml12 .letter',
+    translateX: [40,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: (el, i) => 500 + 30 * i
+  }).add({
+    targets: '.ml12 .letter',
+    translateX: [0,-30],
+    opacity: [1,0],
+    easing: "easeInExpo",
+    duration: 1100,
+    delay: (el, i) => 100 + 30 * i
+  });
+  </script>
 </body>
 </html>
