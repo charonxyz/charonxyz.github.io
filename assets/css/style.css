@@ -64,6 +64,12 @@ p {
 	padding: 0;
 }
 
+.content-logo {
+    border: none;
+    font-size: 200%;
+    color: #e621fc;
+}
+
 .animatedtext {
   font-weight: 200;
   font-size: 1.8em;
