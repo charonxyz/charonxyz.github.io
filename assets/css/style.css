@@ -51,14 +51,14 @@ p {
 	padding: 0;
 }
 
-.ml12 {
+.animatedtext {
   font-weight: 200;
   font-size: 1.8em;
   text-transform: uppercase;
   letter-spacing: 0.5em;
 }
 
-.ml12 .letter {
+.animatedtext .letter {
   display: inline-block;
   line-height: 1em;
 }
