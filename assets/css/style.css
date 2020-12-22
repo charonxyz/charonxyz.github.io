@@ -70,6 +70,11 @@ p {
     color: #e621fc;
 }
 
+.indicator {
+    color: #e621fc;
+    animation: flickerAnimation 1.5s infinite;
+}
+
 .animatedtext {
   font-weight: 200;
   font-size: 1.8em;
