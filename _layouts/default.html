@@ -42,6 +42,38 @@
   <script type="application/ld+json">
 {"@type":"WebSite","headline":"Bananenmilchmitschokoladengeschmack","url":"https://charonxyz.github.io/","description":"Dies hier ist eine Webseite die ich aus spaß erstellt habe. LG ~charon","name":"charonxyz","@context":"https://schema.org"}</script>
 
+<script>
+
+  var charon_text = "My name is charon i guess";
+  var changing = true;
+  var wait = 0;
+
+  setInterval(function(){
+    var ind = "<span class='indicator'>|</span>";
+    var el = document.getElementById("promo-text");
+    var current_text = el.innerHTML.split("<span")[0];
+    if(wait > 0)
+    {
+      wait--;
+      return;
+    }
+    if(changing)
+    {
+      if(current_text.length < charon_text.length)
+        el.innerHTML = charon_text.substring(0, current_text.length+1)+ind;
+      else {
+        changing = false;
+        wait = 4;
+      }
+    } else {
+      if(current_text.length > 0) {
+        el.innerHTML = charon_text.substring(0, current_text.length-1)+ind;
+      }
+      else changing = true;
+    }
+  }, 500);
+
+</script>
 </head>
 <body id="body">
   <header id="head">
@@ -63,7 +95,8 @@
 
   <div class="container">
       <section id="main_content">
-        <h2 class="animatedtext"> My Name is charon i guess </h2>
+      <!--  <h2 class="animatedtext"> My Name is charon i guess </h2> -->
+        <div class="content-logo" id="promo-text"><span class='indicator'>|</span></div>
         <blockquote>
           <p> YEAH </p>
         </blockquote>
