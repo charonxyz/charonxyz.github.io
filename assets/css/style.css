@@ -51,6 +51,18 @@ p {
 	padding: 0;
 }
 
+.ml12 {
+  font-weight: 200;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
 #head {
 	background-image: url("https://wallpaperaccess.com/full/2029165.jpg");
 	margin: 0;
