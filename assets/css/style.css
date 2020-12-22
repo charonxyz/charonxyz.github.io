@@ -70,6 +70,12 @@ p {
     color: #e621fc;
 }
 
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+
 .indicator {
     color: #e621fc;
     animation: flickerAnimation 1.5s infinite;
